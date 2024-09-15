@@ -3,13 +3,175 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>DevJane Portfolio Website</title>
+        <title>DevEmmanuel Portfolio Website</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
-
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/media/media.css">
 
     </head>
     <body>
+        <!-- Logo and Navigation -->
+        <header>
+            <div class="logo">
+                <img src="img/brand-logo.jpg" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Emmanuel Mwamuka</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">front-end dev</p>
+            <img src="img/emmanuel01.png" alt="Emmanuel wearing a suit" class="intro__img">
+        </section>
+        
+        
+        <!-- My services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Coding Student</h3>
+                    <p>I’m currently studying software development, learning how to write and understand code to build software and websites. I’m going to be learning different programming languages and working on various projects to get the hang of creating tech solutions.</p>
+                </div> <!-- / service -->
+                
+                <div class="service">
+                    <h3>Producer</h3>
+                    <p>Im a beat maker, i just love mixing instruments</p>
+                </div> <!-- / service -->
+                
+                <div class="service">
+                    <h3>Footballer</h3>
+                    <p>Im currently playing for a club, so I spend some of time on the field training, showing off my skills and staying fit</p>
+                </div> <!-- / service -->
+            </div> <!-- / services -->
+            
+            <a href="#work" class="btn">My Work</a>
+        </section>
+        
+        
+        <!-- About me -->
+        <section class="about-me" id="about">
+           <h2 class="section__title section__title--about">Who I am</h2>
+           <p class="section__subtitle section__subtitle--about">Software Developer</p>
+           
+           <div class="about-me__body">
+               <p>I’m currently studying software development, I’m diving deep into coding and I'm learning how to build webpages. I’m really enjoying the challenge of solving problems and creating new things with code. Even though my dream of becoming a pilot isn’t in the cards anymore, I’m excited about what I’m learning now and how it’s going to shape my future. Alongside my studies, I’m also passionate about making beats and playing football, which helps keep me balanced and motivated.</p>
+               <img src="img/emmanuel02.png" alt="Emmanuel wearing a brown jacket" class="about-me__img">
+           </div>
+           
+           
+        </section>
+        
+        <!-- My Work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My work</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+            
+            <div class="portfolio">
+                <!-- Portfolio item 01 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="img/portfolio-01.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 02 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="img/portfolio-02.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 03 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="img/portfolio-03.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 04 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="img/portfolio-04.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 05 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="img/portfolio-05.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 06 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="img/portfolio-06.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 07 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="img/portfolio-07.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 08 -->
+                <a href="#" class="portfolio__item">
+                    <img src="img/portfolio-08.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 09 -->
+                <a href="#" class="portfolio__item">
+                    <img src="img/portfolio-09.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 0 0-->
+                <a href="#" class="portfolio__item">
+                    <img src="img/portfolio-10.jpg" alt="" class="portfolio__img">
+                </a>
+            </div>
+        </section>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:@a.emmanuelll.17@gmail.com." class="footer__link">emmanuelll.17@gmail.com</a>
+            <ul class="social-list">
+                <!-- Codepen -->
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://codepen.io/Emmanuel-Anotida" target="_blank">
+                        <i class="fab fa-codepen"></i>
+                    </a>
+                </li>
+                <!-- Dribble -->
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://dribbble.com/Emmanuel0017" target="_blank">
+                        <i class="fab fa-dribbble"></i>
+                    </a>
+                </li>
+                <!-- Twitter -->
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://x.com/AEmmanuelll" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <!-- Github -->
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/Emmanuel802" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        
+        <script src="js/index.js"></script>
         
     </body>
 </html>
