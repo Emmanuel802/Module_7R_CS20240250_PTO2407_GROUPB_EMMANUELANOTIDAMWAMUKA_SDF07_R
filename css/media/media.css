@@ -1,118 +1,140 @@
-/* Responsive Dimensions for (max-width: 900px */
+/* ----------Responsive Dimensions for (max-width: 900px)---------- */
 @media (max-width: 900px) {
+    
+    /* Adjust font size for navigation links */
     .nav__link {
         font-size: 1.75rem;
     }
-    
+
+    /* Adjust font size and width for section titles */
     .section__title {
         font-size: 1.75em;
         max-width: 100%;
     }
     
+    /* Ensure images in the intro and about-me sections scale responsively */
     .intro__img, .about-me__img {
         max-width: 100%;
-       
     }
 
+    /* Center and set width for the about-me image */
     .about-me__img {
         margin: 0 auto; 
         width: 200px;
     }
     
+    /* Adjust subtitle font size for the intro section */
     .section__subtitle--intro {
         font-size: 1.25em;
     }
 
+    /* Stack the services column vertically */
     .services {
         flex-direction: column;
     }
 
+    /* Stack the content in the about-me body vertically and adjust margin */
     .about-me__body {
         display: flex;
         flex-direction: column;
         margin-bottom: 10px;
     }
 
-    
+    /* Adjust grid layout for the portfolio section to fit 3 columns */
     .portfolio {
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
     }
 }
 
-
-/* Responsive Dimensions for (max-width: 700px */
+/* ----------Responsive Dimensions for (max-width: 700px)---------- */
 @media (max-width: 700px) {
+    
+    /* Reduce padding for the header section */
     header {
         padding: 10px 0;
     }
 
+    /* Reduce logo image size */
     .logo img {
         width: 100px;
         max-width: 100%;
-    }  
+    }
 
+    /* Further reduce font size for navigation links */
     .nav__link {
         font-size: 1.25rem;
     }
 
+    /* Adjust padding and positioning of the navigation toggle button */
     .nav-toggle {
         padding: .3em;
         right: 0.1em;
         top: 0.5em;
     }
 
+    /* Adjust dimensions of the hamburger menu icon */
     .hamburger,
-.hamburger::before,
-.hamburger::after {
-    width: 1.7em;
-    height: 3px;
-}
+    .hamburger::before,
+    .hamburger::after {
+        width: 1.7em;
+        height: 3px;
+    }
 
+    /* Reduce size of the intro image */
     .intro__img {
         width: 150px;
     }
 
-    h1{
+    /* Align h1 elements to center */
+    h1 {
         display: block;
         text-align: center;
     }
 
+    /* Ensure bold text inside h1 is block level */
     h1 strong {
         display: block;
     }
 
-    section__title{
+    /* Adjust font size of section titles */
+    .section__title {
         font-size: 60px;
     }
 
+    /* Center intro subtitle and adjust margin */
     .section__subtitle--intro {
         margin: 10px auto;
     }
 
+    /* Center the about-me subtitle */
     .section__subtitle--about {
         margin: 0 auto;
     }
 
+    /* Adjust subtitle font size globally */
     .section__subtitle {
         font-size: 1em;
     }
 
+    /* Stack services vertically */
     .services {
         flex-direction: column;
     }
 
+    /* Adjust font size for service descriptions and about-me body text */
     .service, .about-me__body p {
         font-size: small;
     }
 
+    /* Reduce padding for buttons */
     .btn {
-        padding: .3em 1.25em;  
+        padding: .3em 1.25em;
     }
 
+    /* Adjust portfolio grid to 3 columns and reduce gap */
     .portfolio {
         grid-template-columns: repeat(3, 1fr);
         gap: 5px;
     }
-
 }
